@@ -1,0 +1,12 @@
+{
+  "name": "01-tasks-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "dev": "node --watch src/server.js"
+  },
+  "author": "",
+  "license": "ISC"
+}
