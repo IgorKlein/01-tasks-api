@@ -1,6 +1,6 @@
 import fs from 'node:fs/promises'
 
-const databasePath = new URL('..db.json', import.meta.url);
+const databasePath = new URL('../db.json', import.meta.url);
 
 export class Database {
 
@@ -31,6 +31,8 @@ export class Database {
         } else {
             this.#database[table] = [data]
         }
+
+        this.#persist()
 
         return data;
     }
